@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jose/ADA/karatsuba.cpp
+iostream
+-
+vector
+-
+stdlib.h
+-
+cmath
+-
+math.h
+-
+stdlib.h
+-
+stack
+-
+
