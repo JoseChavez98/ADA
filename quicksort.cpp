@@ -51,15 +51,15 @@ void Quicksort(int arr[],int p,int r){
 
 int main(){
     srand (time(NULL));
-    int arr_size = rand() % 10 + 1;
-    //int arr_size=8;
-    int *arr= new int[arr_size];
-    //int arr[]={2,8,7,1,3,5,6,4};
+    //int arr_size = rand() % 10 + 1;
+    int arr_size=8;
+    //int *arr= new int[arr_size];
+    int arr[]={2,8,7,1,3,5,6,4};
 
-    for(int i=0;i<arr_size;i++)
-    {
-        arr[i]=rand() % 30;
-    }
+//    for(int i=0;i<arr_size;i++)
+//    {
+//        arr[i]=rand() % 30;
+//    }
 
     PrintArray(arr,arr_size);
 

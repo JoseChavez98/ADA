@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ADA.dir/karatsuba.cpp.o"
+  "CMakeFiles/ADA.dir/compare.cpp.o"
   "ADA.pdb"
   "ADA"
 )

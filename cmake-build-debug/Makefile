@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2019.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/jose/ADA/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2019.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,32 +123,32 @@ ADA/fast:
 	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/build
 .PHONY : ADA/fast
 
-karatsuba.o: karatsuba.cpp.o
+compare.o: compare.cpp.o
 
-.PHONY : karatsuba.o
+.PHONY : compare.o
 
 # target to build an object file
-karatsuba.cpp.o:
-	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/karatsuba.cpp.o
-.PHONY : karatsuba.cpp.o
+compare.cpp.o:
+	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/compare.cpp.o
+.PHONY : compare.cpp.o
 
-karatsuba.i: karatsuba.cpp.i
+compare.i: compare.cpp.i
 
-.PHONY : karatsuba.i
+.PHONY : compare.i
 
 # target to preprocess a source file
-karatsuba.cpp.i:
-	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/karatsuba.cpp.i
-.PHONY : karatsuba.cpp.i
+compare.cpp.i:
+	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/compare.cpp.i
+.PHONY : compare.cpp.i
 
-karatsuba.s: karatsuba.cpp.s
+compare.s: compare.cpp.s
 
-.PHONY : karatsuba.s
+.PHONY : compare.s
 
 # target to generate assembly for a file
-karatsuba.cpp.s:
-	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/karatsuba.cpp.s
-.PHONY : karatsuba.cpp.s
+compare.cpp.s:
+	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/compare.cpp.s
+.PHONY : compare.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ADA"
 	@echo "... edit_cache"
-	@echo "... karatsuba.o"
-	@echo "... karatsuba.i"
-	@echo "... karatsuba.s"
+	@echo "... compare.o"
+	@echo "... compare.i"
+	@echo "... compare.s"
 .PHONY : help
 
 

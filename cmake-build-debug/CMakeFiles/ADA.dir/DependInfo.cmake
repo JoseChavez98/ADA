@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jose/ADA/karatsuba.cpp" "/home/jose/ADA/cmake-build-debug/CMakeFiles/ADA.dir/karatsuba.cpp.o"
+  "/home/jose/ADA/compare.cpp" "/home/jose/ADA/cmake-build-debug/CMakeFiles/ADA.dir/compare.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

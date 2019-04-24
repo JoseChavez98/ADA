@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/jose/ADA/karatsuba.cpp
+/home/jose/ADA/compare.cpp
 iostream
+-
+limits
+-
+chrono
+-
+numeric
+-
+random
 -
 vector
 -
-stdlib.h
--
-cmath
--
-math.h
--
-stdlib.h
--
-stack
+algorithm
 -
 
