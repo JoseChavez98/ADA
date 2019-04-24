@@ -51,7 +51,7 @@ int PartitionArray(int arr[],int p,int r){
 
 void Quicksort(int arr[],int p,int r){
 
-    if(p<r){
+    while(p<r){
 
         int q = PartitionArray(arr,p,r);
 
@@ -69,7 +69,7 @@ int main(){
     //int arr_size = rand() % 10 + 1;
     int arr_size=5;
     //int *arr= new int[arr_size];
-    int arr[]={2,8,7,1,3};
+    int arr[]={2,8,7,34,1,3,22};
 
 
 
