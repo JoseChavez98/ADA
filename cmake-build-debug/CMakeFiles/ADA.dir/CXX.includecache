@@ -6,19 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jose/ADA/compare.cpp
+/home/jose/ADA/quicksortRT.cpp
 iostream
 -
-limits
+cstdlib
 -
-chrono
--
-numeric
+stdlib.h
 -
 random
--
-vector
--
-algorithm
 -
 

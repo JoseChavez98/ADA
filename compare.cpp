@@ -117,7 +117,7 @@ void Quicksort(int arr[],int p,int r){
 
 int main(){
 
-    int arr_size = 10000000;
+    int arr_size = 76;
 
     float Quickaverage = 0.0;
     float Mergeaverage = 0.0;
@@ -160,12 +160,12 @@ int main(){
         //std::cout << "QuickSort demora    : " << elapsed3.count() << " segundos" << '\n';
         Quickaverage+=elapsed3.count();
 
-//        auto start = std::chrono::high_resolution_clock::now();
-//        inSort(arr,arr_size);
-//        auto end = std::chrono::high_resolution_clock::now();
-//        std::chrono::duration<double> elapsed = end - start;
-//        //std::cout<<"InsertionSort demora: "<<elapsed.count()<<" segundos"<<'\n';
-//        Insertionaverage+=elapsed.count();
+        auto start = std::chrono::high_resolution_clock::now();
+        inSort(arr,arr_size);
+        auto end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> elapsed = end - start;
+        //std::cout<<"InsertionSort demora: "<<elapsed.count()<<" segundos"<<'\n';
+        Insertionaverage+=elapsed.count();
 
 
         cont++;

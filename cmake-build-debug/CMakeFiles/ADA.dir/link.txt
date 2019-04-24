@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/ADA.dir/compare.cpp.o  -o ADA 
+/usr/bin/c++  -g   CMakeFiles/ADA.dir/quicksortRT.cpp.o  -o ADA 

@@ -18,6 +18,14 @@ void Swap(int arr[],int index1, int index2){
 
 }
 
+void swap(int* a, int* b)
+{
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+
 int PartitionArray(int arr[],int p,int r){
 
     int x = arr[r];
@@ -27,8 +35,9 @@ int PartitionArray(int arr[],int p,int r){
     {
         if(arr[j]<=x){
 
-            i+=1;
-            Swap(arr,i,j);
+            i++;
+            //Swap(arr,i,j);
+            swap(&arr[i], &arr[j]);
 
         }
     }
@@ -38,42 +47,35 @@ int PartitionArray(int arr[],int p,int r){
     return i + 1;
 }
 
-int RandomizedPartition(int arr[] , int p, int r){
-    std::random_device dev;
-    std::mt19937 rng(dev());
-    std::uniform_int_distribution<std::mt19937::result_type> dist6(p,r); // distribution in range [1, 6]
 
-    int i = dist6(rng) ;
-    Swap(arr,i,r);
-    return PartitionArray(arr,p,r);
-}
 
-void RandomQuicksort(int arr[],int p,int r){
+void Quicksort(int arr[],int p,int r){
 
     if(p<r){
 
-        int q = RandomizedPartition(arr,p,r);
+        int q = PartitionArray(arr,p,r);
 
-        RandomQuicksort(arr,p,q-1);
-        RandomQuicksort(arr,q+1,r);
+        Quicksort(arr,p,q-1);
+        //Quicksort(arr,q+1,r);
+
+        p = q + 1;
+
     }
 }
+
 
 int main(){
     srand (time(NULL));
     //int arr_size = rand() % 10 + 1;
-    int arr_size=8;
+    int arr_size=5;
     //int *arr= new int[arr_size];
-    int arr[]={2,8,7,1,3,5,6,4};
+    int arr[]={2,8,7,1,3};
 
-//    for(int i=0;i<arr_size;i++)
-//    {
-//        arr[i]=rand() % 30;
-//    }
+
 
     PrintArray(arr,arr_size);
 
-    RandomQuicksort(arr,0,arr_size-1);
+    Quicksort(arr,0,arr_size-1);
 
     PrintArray(arr,arr_size);
 
