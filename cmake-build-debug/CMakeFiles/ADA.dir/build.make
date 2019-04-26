@@ -57,27 +57,27 @@ include CMakeFiles/ADA.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ADA.dir/flags.make
 
-CMakeFiles/ADA.dir/quicksortRT.cpp.o: CMakeFiles/ADA.dir/flags.make
-CMakeFiles/ADA.dir/quicksortRT.cpp.o: ../quicksortRT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jose/ADA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ADA.dir/quicksortRT.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ADA.dir/quicksortRT.cpp.o -c /home/jose/ADA/quicksortRT.cpp
+CMakeFiles/ADA.dir/mergesort.cpp.o: CMakeFiles/ADA.dir/flags.make
+CMakeFiles/ADA.dir/mergesort.cpp.o: ../mergesort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jose/ADA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ADA.dir/mergesort.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ADA.dir/mergesort.cpp.o -c /home/jose/ADA/mergesort.cpp
 
-CMakeFiles/ADA.dir/quicksortRT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ADA.dir/quicksortRT.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jose/ADA/quicksortRT.cpp > CMakeFiles/ADA.dir/quicksortRT.cpp.i
+CMakeFiles/ADA.dir/mergesort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ADA.dir/mergesort.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jose/ADA/mergesort.cpp > CMakeFiles/ADA.dir/mergesort.cpp.i
 
-CMakeFiles/ADA.dir/quicksortRT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ADA.dir/quicksortRT.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jose/ADA/quicksortRT.cpp -o CMakeFiles/ADA.dir/quicksortRT.cpp.s
+CMakeFiles/ADA.dir/mergesort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ADA.dir/mergesort.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jose/ADA/mergesort.cpp -o CMakeFiles/ADA.dir/mergesort.cpp.s
 
 # Object files for target ADA
 ADA_OBJECTS = \
-"CMakeFiles/ADA.dir/quicksortRT.cpp.o"
+"CMakeFiles/ADA.dir/mergesort.cpp.o"
 
 # External object files for target ADA
 ADA_EXTERNAL_OBJECTS =
 
-ADA: CMakeFiles/ADA.dir/quicksortRT.cpp.o
+ADA: CMakeFiles/ADA.dir/mergesort.cpp.o
 ADA: CMakeFiles/ADA.dir/build.make
 ADA: CMakeFiles/ADA.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jose/ADA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ADA"

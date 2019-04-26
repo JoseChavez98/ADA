@@ -117,14 +117,14 @@ void Quicksort(int arr[],int p,int r){
 
 int main(){
 
-    int arr_size = 76;
+    int arr_size = 150;
 
     float Quickaverage = 0.0;
     float Mergeaverage = 0.0;
     float Insertionaverage = 0.0;
     int cont = 0;
 
-    while(cont<20) {
+    while(cont<100 ) {
 
 
         std::mt19937 rng(std::random_device{}());
@@ -142,9 +142,7 @@ int main(){
             arr[i] = numero;
             arr2[i] = numero;
             arr3[i] = numero;
-
         }
-
 
         auto start2 = std::chrono::high_resolution_clock::now();
         mergesort(arr2, 0, arr_size - 1);

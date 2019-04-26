@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jose/ADA/quicksortRT.cpp
+/home/jose/ADA/mergesort.cpp
 iostream
 -
-cstdlib
+limits
 -
-stdlib.h
--
-random
+vector
 -
 

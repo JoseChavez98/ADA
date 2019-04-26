@@ -3,5 +3,4 @@ project(ADA)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ADA
-        quicksortRT.cpp)
+add_executable(ADA mergesort.cpp)

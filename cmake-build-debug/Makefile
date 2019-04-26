@@ -123,32 +123,32 @@ ADA/fast:
 	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/build
 .PHONY : ADA/fast
 
-quicksortRT.o: quicksortRT.cpp.o
+mergesort.o: mergesort.cpp.o
 
-.PHONY : quicksortRT.o
+.PHONY : mergesort.o
 
 # target to build an object file
-quicksortRT.cpp.o:
-	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/quicksortRT.cpp.o
-.PHONY : quicksortRT.cpp.o
+mergesort.cpp.o:
+	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/mergesort.cpp.o
+.PHONY : mergesort.cpp.o
 
-quicksortRT.i: quicksortRT.cpp.i
+mergesort.i: mergesort.cpp.i
 
-.PHONY : quicksortRT.i
+.PHONY : mergesort.i
 
 # target to preprocess a source file
-quicksortRT.cpp.i:
-	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/quicksortRT.cpp.i
-.PHONY : quicksortRT.cpp.i
+mergesort.cpp.i:
+	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/mergesort.cpp.i
+.PHONY : mergesort.cpp.i
 
-quicksortRT.s: quicksortRT.cpp.s
+mergesort.s: mergesort.cpp.s
 
-.PHONY : quicksortRT.s
+.PHONY : mergesort.s
 
 # target to generate assembly for a file
-quicksortRT.cpp.s:
-	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/quicksortRT.cpp.s
-.PHONY : quicksortRT.cpp.s
+mergesort.cpp.s:
+	$(MAKE) -f CMakeFiles/ADA.dir/build.make CMakeFiles/ADA.dir/mergesort.cpp.s
+.PHONY : mergesort.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ADA"
 	@echo "... edit_cache"
-	@echo "... quicksortRT.o"
-	@echo "... quicksortRT.i"
-	@echo "... quicksortRT.s"
+	@echo "... mergesort.o"
+	@echo "... mergesort.i"
+	@echo "... mergesort.s"
 .PHONY : help
 
 

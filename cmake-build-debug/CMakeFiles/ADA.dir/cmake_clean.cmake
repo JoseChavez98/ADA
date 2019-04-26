@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ADA.dir/quicksortRT.cpp.o"
+  "CMakeFiles/ADA.dir/mergesort.cpp.o"
   "ADA.pdb"
   "ADA"
 )
