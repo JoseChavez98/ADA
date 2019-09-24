@@ -13,7 +13,6 @@ private:
     int u;
     int min = -1;
     int max = -1;
-    // bool arr[2];
 
     void insertEmpty(int x)
     {
@@ -132,33 +131,6 @@ public:
         return this->max;
     }
 
-    // void print()
-    // {
-    //     std::cout<<this->min<<" ";
-    //     if (this->u == 2)
-    //     {
-    //         if (this->min == this->max)
-    //         {
-    //             std::cout << this->min << " ";
-    //             return;
-    //         }
-    //         else
-    //         {
-    //             std::cout << this->min << " ";
-    //             return;
-    //         }
-    //     }
-    //     else
-    //     {
-    //         for (int i = 0; i < sqrt(this->u); i++)
-    //         {
-    //             this->cluster[i]->print();
-    //         }
-
-    //     }
-    //     std::cout << this->max << " ";
-    //     return;
-    // }
 };
 
 #endif
