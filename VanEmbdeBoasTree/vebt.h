@@ -11,7 +11,7 @@ private:
     VanEmbedBoasTree **cluster;
     VanEmbedBoasTree *summary;
     int u;
-    int min = INT_MAX;
+    int min = -1;
     int max = -1;
     // bool arr[2];
 
@@ -23,7 +23,7 @@ private:
 
 public:
     VanEmbedBoasTree() = default;
-    VanEmbedBoasTree(int u)
+    explicit VanEmbedBoasTree(int u)
     {
         this->u = u;
 
@@ -37,35 +37,73 @@ public:
         this->cluster = new VanEmbedBoasTree *[newSize];
         for (int i = 0; i < newSize; i++)
         {
-            VanEmbedBoasTree *newVeb = new VanEmbedBoasTree(newSize);
-            cluster[i] = newVeb;
+            auto *newVeb = new VanEmbedBoasTree(newSize);
+            this->cluster[i] = newVeb;
         }
         this->summary = new VanEmbedBoasTree(newSize);
     }
 
     void insert(int x)
     {
-        if (this->min == INT_MAX)
+        if (this->min == -1)
             insertEmpty(x);
 
         else if (x < this->min)
-        {
             swapMin(x);
-            if (this->u > 2)
+
+        if (this->u > 2)
+        {
+            if (this->cluster[high(x)]->getMin() == -1)
             {
-                if (this->cluster[high(x)]->getMin() == INT_MAX)
-                {
-                    this->summary->insert(high(x));
-                    this->cluster[high(x)]->insertEmpty(low(x));
-                }
+                this->summary->insert(high(x));
+                this->cluster[high(x)]->insertEmpty(low(x));
+            }
+            else
+            {
+                this->cluster[high(x)]->insert(low(x));
+            }
+        }
+        if (x > this->max)
+            this->max = x;
+    }
+
+    int successor(int x)
+    {
+        if (this->u == 2)
+        {
+            if (x == 0 && this->max == 1)
+                return 1;
+            else
+                return -1;
+        }
+        else if (this->min != -1 && x < this->min)
+            return this->min;
+        else
+        {
+            int max_low = this->cluster[high(x)]->getMax();
+
+            if (max_low != -1 && low(x) < max_low)
+            {
+                auto offset = this->cluster[high(x)]->successor(low(x));
+                return index(high(x), offset);
+            }
+            else
+            {
+                auto succ_cluster = this->summary[high(x)].successor(low(x));
+                if (succ_cluster == -1)
+                    return -1;
                 else
                 {
-                    this->cluster[high(x)]->insert(low(x));
+                    int offset = this->cluster[succ_cluster]->getMin();
+                    return index(succ_cluster, offset);
                 }
             }
-            if (x > this->max)
-                this->max = x;
         }
+    }
+
+    int index(int x, int y)
+    {
+        return x * sqrt(this->u) + y;
     }
 
     void swapMin(int &x)
@@ -77,7 +115,7 @@ public:
 
     int high(int x)
     {
-        return (floor(x / sqrt(this->u)));
+        return floor(x / sqrt(this->u));
     }
     int low(int x)
     {
@@ -94,31 +132,33 @@ public:
         return this->max;
     }
 
-    void print()
-    {
-        if (this->u == 2)
-        {
-            if (this->min == this->max)
-            {
-                std::cout << this->min << " ";
-                return;
-            }
-            else
-            {
-                std::cout << this->min << " ";
-                return;
-            }
-        }
-        else
-        {
-            for (int i = 0; i < sqrt(this->u); i++)
-            {
-                this->cluster[i]->print();
-            }
-        }
-        std::cout << this->max << " ";
-        return;
-    }
+    // void print()
+    // {
+    //     std::cout<<this->min<<" ";
+    //     if (this->u == 2)
+    //     {
+    //         if (this->min == this->max)
+    //         {
+    //             std::cout << this->min << " ";
+    //             return;
+    //         }
+    //         else
+    //         {
+    //             std::cout << this->min << " ";
+    //             return;
+    //         }
+    //     }
+    //     else
+    //     {
+    //         for (int i = 0; i < sqrt(this->u); i++)
+    //         {
+    //             this->cluster[i]->print();
+    //         }
+
+    //     }
+    //     std::cout << this->max << " ";
+    //     return;
+    // }
 };
 
 #endif
