@@ -13,7 +13,6 @@ int main()
     veb.insert(15);
 
    std::cout<<veb.successor(14);
-    // veb.print();
 
     return 0;
 }
