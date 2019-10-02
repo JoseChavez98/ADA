@@ -269,7 +269,33 @@
             &= ((2+c)/2)n^2\\
             &\leqslant c2^n  \quad\text{;  when $c\geqslant2$}               
         \end{align*}
-        \item $T(n) = 2T(\floor*{n/2} + 16) + n$
+        \item $T(n) = 2T(\floor*{n/2} + 16) + n$\\
+        Guess: $O(nlogn)$\\
+        I.H: $T(n) \leqslant \textit{c}nlogn$\\
+        I.S: 
+        \begin{align*}
+            T(n/2+16) &\leqslant 2(c(n/2+16)log(n/2+16))+n\\
+            T(n/2+16)+cnlogn&=cnlogn+c(n+32)log(n/2+16))+n\\
+            &=cnlogn - cnlogn+c(n+32)log(n/2+16))+n \\
+            &=cnlogn + cnlog(\frac{(n/2)+16}{n})+32clog((n/2)+16)+n\\
+            &\leqslant cnlogn
+        \end{align*}
+        We have to proof that $[cnlog(\frac{(n/2)+16}{n})+32clog((n/2)+16)+n] \leqslant  0$\\
+        \begin{align*}
+            & [cnlog(\frac{(n/2)+16}{n})+32clog((n/2)+16)+n] \\
+            &= cnlog( 1/2 + 16/n ) + 32clog(n(1/2 +16/n))\\
+            &=cnlog(1/2(1+(32/n)))+32clogn+32clog(1/2(1+(32/n)))+n\\
+            &=cnlog(1/2)+cnlog(1+32/n)+32clogn+32clog(1/2)+32clog(1+(32/n))+n
+        \end{align*}
+        Now choosing any $0 < \epsilon \leqslant 1$
+        \begin{align*}
+            &cn\log (1/2)+cn\epsilon +32c \log n+32 c\log (1/2)+32c \epsilon+n\\
+            &= c(n\log (1/2)+n\epsilon + 32\log n+32 \epsilon)+32clog(1/2)+n\\
+            &< c(nlog(1/2)+ n\epsilon +32logn+34\epsilon)+n
+        \end{align*}
+        Now we note that $nlog(1/2)+n\epsilon+32logn+34\epsilon=n(log(1/2)+\epsilon)+34logn+34\epsilon$ this is equivalent to $g(n)$, that is negative
+         for large enough $n$ since we have a negative  linear function competing with a positive log function.\\
+         Thus , since $|g(n)| \in O(n)$, a $c$ constant exists.
     \end{enumerate}
 \end{exercise}
 
@@ -286,8 +312,32 @@
 \bigbreak\noindent Both $n$ and the sequence of $s_i$'s are integers. The distance between two street numbers $s_i$ and $s_j$ is $d_{ij} = |s_i - s_j|$.
 
     \begin{enumerate}[a)]
-        \item Find an $O(n\log n)$ solution.
+        \item Find an $O(n\log n)$ solution.\\
+            A solution will be if we take our sample set $s_1, s_2, \ldots, s_i, \ldots, s_n$ as points in a 2d-plane. So we can apply the concept of the \textbf{geometric median} . The geometric median is a point minimizing the sum of distances to the sample  points.
+            This generalizes the median, which has the property of minimizing the sum of distances for one-dimensional data, and provides a central tendency in higher dimensions. It is also known as the 1-median,spatial median, Euclidean minisum point,or Torricelli point.
+            \begin{enumerate}[1)]
+                \item First we have to sort our list of points or street numbers. We can use heap sort or merge sort to do it (cost of $O(n\log n)$).
+                \item Then we will just need to apply the formula to find the geometric median, which is $median = \sqrt[n]{s_1*s_2* \ldots* s_{n-1}* s_n}$
+                \item Thus , it will cost $O(n\log n)$ because of the sorting.
+                
+            \end{enumerate}
         \item \textit{Bonus}: Can you do better? Sketch a faster algorithm.
+            A better approach will be one know as the median of medians algorithm. It can achieve a linear cost $O(n)$.\\
+            The algorithm takes in a list (\textit{A}) and an index \textit{i} : "$median-of-median(A,i)$". Assume that all elements of A are distinct (though the algorithm can be further generalized to allow for duplicate elements). 
+            \begin{enumerate}[1)]
+                \item Divide the list into sublists each of length five (if there are fewer than five elements available for the last list, that is fine)
+                \item Sort each sublist and determine the median. Sorting very small lists takes linear time since these sublists have five elements, and this takes $O(n)$ time. In the algorithm described on this page, if the list has an even number of elements, take the floor of the length of the list divided by 2 to find the index of the median. 
+                \item Use the median-of-median algorithm to recursively determine the median of the set of all the medians. 
+                \item Use this median as the pivot element, $x$. The pivot is an approximate median of the whole list and then each recursive step hones in on the true median. 
+                \item Reorder $A$ such that all elements less than $x$ are to the left of $x$, and all elements of $A$ that are greater than $x$ are to the right. This is called partitioning. The elements are in no particular order once they are placed on either side of $x$. For example, if $x$ is 5, the list to the right of $x$ maybe look like [8,7,12,6]  i.e. not in sorted order. This takes linear time since $O(n)$ comparisons occur—each element in $A$ is compared against $x$ only.
+                \item Let $k$ be the “rank” of $x$, meaning, for a set of numbers $S$, $x$ is the $k^{th}$ smallest number in $S$. 
+                \item 
+                \begin{itemize}
+                    \item If $i=k$ ,then return $x$. 
+                    \item f $i<k$, then recurse using median-of-medians on $(A[1,\ldots,k−1],i)$.
+                    \item If $i>k$, recurse using the median-of-medians algorithm on $(A[k+1,\ldots,i],i−k)$.
+                \end{itemize} 
+            \end{enumerate}
     \end{enumerate}
 \end{problem}
 
@@ -298,7 +348,6 @@
     \end{figure} 
     \begin{lstlisting}
 #include <iostream>
-#include <vector>
 
 class Node
 {

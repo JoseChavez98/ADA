@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/ADA.dir/mergesort.cpp.o  -o ADA 
+/usr/bin/c++  -g   CMakeFiles/ADA.dir/quick_mergesort.cpp.o  -o ADA 

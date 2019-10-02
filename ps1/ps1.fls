@@ -120,6 +120,8 @@ INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /home/jose/ADA/ps1/10077.png
 INPUT /home/jose/ADA/ps1/10077.png
@@ -127,8 +129,6 @@ INPUT /home/jose/ADA/ps1/10077.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /home/jose/ADA/ps1/ps1.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb

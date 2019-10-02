@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1567316841 "/home/jose/ADA/ps1/ps1.tex" "/home/jose/ADA/ps1/ps1.pdf" "ps1" 1567316842
+["pdflatex"] 1567397946 "/home/jose/ADA/ps1/ps1.tex" "/home/jose/ADA/ps1/ps1.pdf" "ps1" 1567397946
   "/etc/texmf/web2c/texmf.cnf" 1563337449 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jose/ADA/ps1/ps1.aux" 1567316842 494 17a474f7a08fccac0e464e2fda9fe343 ""
-  "/home/jose/ADA/ps1/ps1.tex" 1567316841 12095 ed5c6ebdaefcc3ea7416548f5499513d ""
+  "/home/jose/ADA/ps1/ps1.aux" 1567397946 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/jose/ADA/ps1/ps1.tex" 1567397945 16757 c88e1c3402800eb2721a01e670d12b05 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -93,11 +93,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1563338291 127853 b41f58aff49fe1af38af8d065f49d51c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1563338294 795362 ca043a59c4563b6f15bdce5233eb0602 ""
   "10077.png" 1567313496 15338 9322ed7d8913a9cd6aa45a020cf34108 ""
-  "ps1.aux" 1567316842 494 17a474f7a08fccac0e464e2fda9fe343 ""
-  "ps1.tex" 1567316841 12095 ed5c6ebdaefcc3ea7416548f5499513d ""
+  "ps1.aux" 0 -1 0 ""
+  "ps1.tex" 1567397945 16757 c88e1c3402800eb2721a01e670d12b05 ""
   (generated)
+  "ps1.log"
+  "/home/jose/ADA/ps1/ps1.pdf"
   "/home/jose/ADA/ps1/ps1.log"
   "ps1.pdf"
-  "ps1.log"
   "ps1.aux"
-  "/home/jose/ADA/ps1/ps1.pdf"

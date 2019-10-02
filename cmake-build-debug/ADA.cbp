@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jose/ADA/mergesort.cpp">
+		<Unit filename="/home/jose/ADA/quick_mergesort.cpp">
 			<Option target="ADA"/>
 		</Unit>
 		<Unit filename="/home/jose/ADA/CMakeLists.txt">

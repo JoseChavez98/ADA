@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jose/ADA/mergesort.cpp
+/home/jose/ADA/quick_mergesort.cpp
 iostream
 -
-limits
--
 vector
+-
+climits
 -
 
