@@ -1,3 +1,3 @@
-/home/jose/ADA/VanEmbdeBoasTree/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/jose/ADA/VanEmbdeBoasTree/cmake-build-debug/CMakeFiles/VanEmbdeBoasTree.dir
-/home/jose/ADA/VanEmbdeBoasTree/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jose/ADA/van-emde-boas-trees-JoseChavez98/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jose/ADA/van-emde-boas-trees-JoseChavez98/cmake-build-debug/CMakeFiles/van_emde_boas_trees_JoseChavez98.dir
+/home/jose/ADA/van-emde-boas-trees-JoseChavez98/cmake-build-debug/CMakeFiles/edit_cache.dir

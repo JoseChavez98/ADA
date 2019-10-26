@@ -1,4 +1,4 @@
-/opt/clion-2019.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jose/ADA/VanEmbdeBoasTree
+/opt/clion-2019.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jose/ADA/van-emde-boas-trees-JoseChavez98
 -- The C compiler identification is GNU 8.3.0
 -- The CXX compiler identification is GNU 8.3.0
 -- Check for working C compiler: /usr/bin/cc
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jose/ADA/VanEmbdeBoasTree/cmake-build-debug
+-- Build files have been written to: /home/jose/ADA/van-emde-boas-trees-JoseChavez98/cmake-build-debug

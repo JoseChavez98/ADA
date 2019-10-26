@@ -48,10 +48,10 @@ RM = /opt/clion-2019.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jose/ADA/VanEmbdeBoasTree
+CMAKE_SOURCE_DIR = /home/jose/ADA/van-emde-boas-trees-JoseChavez98
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jose/ADA/VanEmbdeBoasTree/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jose/ADA/van-emde-boas-trees-JoseChavez98/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jose/ADA/VanEmbdeBoasTree/cmake-build-debug/CMakeFiles /home/jose/ADA/VanEmbdeBoasTree/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jose/ADA/van-emde-boas-trees-JoseChavez98/cmake-build-debug/CMakeFiles /home/jose/ADA/van-emde-boas-trees-JoseChavez98/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jose/ADA/VanEmbdeBoasTree/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jose/ADA/van-emde-boas-trees-JoseChavez98/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named VanEmbdeBoasTree
+# Target rules for targets named van_emde_boas_trees_JoseChavez98
 
 # Build rule for target.
-VanEmbdeBoasTree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 VanEmbdeBoasTree
-.PHONY : VanEmbdeBoasTree
+van_emde_boas_trees_JoseChavez98: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 van_emde_boas_trees_JoseChavez98
+.PHONY : van_emde_boas_trees_JoseChavez98
 
 # fast build rule for target.
-VanEmbdeBoasTree/fast:
-	$(MAKE) -f CMakeFiles/VanEmbdeBoasTree.dir/build.make CMakeFiles/VanEmbdeBoasTree.dir/build
-.PHONY : VanEmbdeBoasTree/fast
+van_emde_boas_trees_JoseChavez98/fast:
+	$(MAKE) -f CMakeFiles/van_emde_boas_trees_JoseChavez98.dir/build.make CMakeFiles/van_emde_boas_trees_JoseChavez98.dir/build
+.PHONY : van_emde_boas_trees_JoseChavez98/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/VanEmbdeBoasTree.dir/build.make CMakeFiles/VanEmbdeBoasTree.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/van_emde_boas_trees_JoseChavez98.dir/build.make CMakeFiles/van_emde_boas_trees_JoseChavez98.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/VanEmbdeBoasTree.dir/build.make CMakeFiles/VanEmbdeBoasTree.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/van_emde_boas_trees_JoseChavez98.dir/build.make CMakeFiles/van_emde_boas_trees_JoseChavez98.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/VanEmbdeBoasTree.dir/build.make CMakeFiles/VanEmbdeBoasTree.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/van_emde_boas_trees_JoseChavez98.dir/build.make CMakeFiles/van_emde_boas_trees_JoseChavez98.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -157,7 +157,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... VanEmbdeBoasTree"
+	@echo "... van_emde_boas_trees_JoseChavez98"
 	@echo "... edit_cache"
 	@echo "... main.o"
 	@echo "... main.i"
